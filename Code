@@ -1,0 +1,143 @@
+Console.WriteLine("Здравсивуйте! Я калькулятор, и я вам помогу решит ваши проблемы!");
+Console.WriteLine("Для начала, скажите мне что я должен выполнить, вот что я могу!");
+Console.WriteLine("Если готовы нажмите Enter.");
+string input = Console.ReadLine();
+Console.WriteLine("1 сложение.");
+Console.WriteLine("2 вычитание.");
+Console.WriteLine("3 умножение.");
+Console.WriteLine("4 деление.");
+Console.WriteLine("5 возведение в степень.");
+Console.WriteLine("6 найти квадратный корень.");
+Console.WriteLine("7 найти 1 процент из числа.");
+Console.WriteLine("8 найти факториал.");
+Console.WriteLine("9 выход.");
+input = Console.ReadLine();
+int a = Convert.ToInt32(input);
+
+
+
+switch (a)
+{
+    case 1:
+        Console.WriteLine("Сколько будет чисел, друг мой?");
+        input = Console.ReadLine();
+        int b = Convert.ToInt32(input);
+        Console.WriteLine("Введите число 1: ");
+        input = Console.ReadLine();
+        int c = Convert.ToInt32(input);
+        for (int i = 2; i <= b; i++)
+        {
+            Console.WriteLine("Введите число " + i + ": ");
+            input = Console.ReadLine();
+            int ad = Convert.ToInt32(input);
+            c = c + ad;           
+        }
+        Console.Write("Рузельтат ");
+        Console.WriteLine(c);
+        break;
+
+    case 2:
+        Console.WriteLine("Сколько будет чисел, друг мой?");
+        input = Console.ReadLine();
+        int e = Convert.ToInt32(input);
+        Console.WriteLine("Введите число 1: ");
+        input = Console.ReadLine();
+        int f = Convert.ToInt32(input);
+        for (int i = 2; i <= e; i++)
+        {
+            Console.WriteLine("Введите число " + i + ": ");
+            input = Console.ReadLine();
+            int dф = Convert.ToInt32(input);
+            f = f - dф;
+        }
+        Console.Write("Рузельтат ");
+        Console.WriteLine(f);
+        break;
+
+    case 3:
+        Console.WriteLine("Сколько будет чисел, друг мой?");
+        input = Console.ReadLine();
+        int h = Convert.ToInt32(input);
+        Console.WriteLine("Введите число 1: ");
+        input = Console.ReadLine();
+        int j = Convert.ToInt32(input);
+        for (int i = 2; i <= h; i++)
+        {
+            Console.WriteLine("Введите число " + i + ": ");
+            input = Console.ReadLine();
+            int rd = Convert.ToInt32(input);
+            j = j * rd;
+        }
+        Console.Write("Рузельтат ");
+        Console.WriteLine(j);
+        break;
+
+    case 4:
+        Console.WriteLine("Сколько будет чисел, друг мой?");
+        input = Console.ReadLine();
+        int k = Convert.ToInt32(input);
+        Console.WriteLine("Введите число 1: ");
+        input = Console.ReadLine();
+        int l = Convert.ToInt32(input);
+        for (int i = 2; i <= k; i++)
+        {
+            Console.WriteLine("Введите число " + i + ": ");
+            input = Console.ReadLine();
+            int td = Convert.ToInt32(input);
+            l = l + td;
+        }
+        Console.Write("Рузельтат ");
+        Console.WriteLine(l);
+        break;
+
+
+    case 5:
+        Console.WriteLine("Введите число 1: ");
+        input = Console.ReadLine();
+        int n = Convert.ToInt32(input);
+        Console.WriteLine("Введите степень: ");
+        input = Console.ReadLine();
+        int d = Convert.ToInt32(input);        
+        Console.Write("Рузельтат " + Math.Pow(n,d));
+        break;
+
+
+    case 6:
+        Console.WriteLine("Введите число: ");
+        input = Console.ReadLine();
+        int o = Convert.ToInt32(input);       
+        Console.Write("Рузельтат " + Math.Sqrt(o));
+        break;
+
+
+    case 7:
+        Console.WriteLine("Введите числo: ");
+        input = Console.ReadLine();
+        int p = Convert.ToInt32(input);
+        p = 1 % p;
+        Console.Write("Рузельтат " + p);
+        break;
+
+    case 8:
+        Console.WriteLine("Введите числo: ");
+        input = Console.ReadLine();
+        int r = Convert.ToInt32(input);
+        int fact = 1;
+        Console.Write("Рузельтат ");
+        for (int i = 2; i <= r; i++ )
+        {
+            fact = fact * i;
+        }
+        Console.WriteLine(fact);
+        break;
+
+    case 9:
+        Console.WriteLine("Надеюсь я смог помочь вам в ваших вычислениях, удачи на дорогах!");
+        Console.WriteLine("...........................\r\n...........................\r\n...........................\r\n @@@  .. @@@  .............\r\n @@@  .. @@@  .............\r\n...........................\r\n...____________________....\r\n.....________________......\r\n...........................\r\n...........................\r\n...........................");
+
+        break;
+
+ 
+
+
+}
