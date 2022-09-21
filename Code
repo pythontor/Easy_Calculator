@@ -84,7 +84,7 @@ switch (a)
             Console.WriteLine("Введите число " + i + ": ");
             input = Console.ReadLine();
             int td = Convert.ToInt32(input);
-            l = l + td;
+            l = l / td;
         }
         Console.Write("Рузельтат ");
         Console.WriteLine(l);
